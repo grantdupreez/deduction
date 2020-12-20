@@ -9,7 +9,7 @@ confidence = st.slider(
     "Enter the Minimum Confidence Value", min_value=0.1, max_value=0.9, value=0.6
 )
 
-inFile = dataFromFile("testdata.csv")
+inFile = dataFromFile("store_data.csv")
 
 items, rules = runApriori(inFile, support, confidence)
 
